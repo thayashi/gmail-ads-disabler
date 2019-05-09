@@ -1,0 +1,13 @@
+{
+  "name": "Gmail Ads Disabler",
+  "version": "0.1.0",
+  "manifest_version": 2,
+  "description": "This extension hides Gmail ads",
+  "content_scripts": [
+    {
+      "matches": ["https://mail.google.com/mail/*"],
+      "css": ["user.css"],
+      "run_at": "document_idle"
+    }
+  ]
+}
